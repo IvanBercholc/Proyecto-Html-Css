@@ -1,0 +1,238 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/*HEADER*/
+header {
+    color: rgb(247, 247, 247); background-color: black;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/*FOOTER*/
+footer {
+    color: rgb(247, 247, 247); 
+    background-color: black;
+    max-width: 100%;
+    line-height: 2.5;
+    display: flex;
+    justify-content: space-evenly;
+}
+/*LOGO RICA*/
+.logo {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    transition: transform 0.5s;
+}
+.logo:hover {
+    transform: scale(110%)translate(4px)
+}
+/*MENU*/
+nav li {
+    display: inline;
+}
+/*BOTÓNES MENU*/
+.nav__boton:link, .nav__boton:visited {
+    color:rgb(247, 247, 247);
+    text-decoration: none;
+    padding: 22px 10px 22px 10px;
+    transition: all 0.2s;
+}
+.nav__boton:hover {
+    background-color: rgb(30, 30, 30) ;
+    text-decoration: none;
+}
+.nav__boton:active {
+    background-color: black;
+}
+h1 a:link, h1 a:visited {
+    color: black;
+}
+h1 a:hover {
+    background-color: black;    
+}
+/*REDES*/
+.redes {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.redes a{
+    margin: 3px;
+}
+/*BOTÓN INICIO*/
+#botonwave:link, #botonwave:visited { 
+    background-color: rgb(150,150,150);
+    padding: 15px 55px 15px 55px;
+    position:absolute;
+    right: 150px;
+    bottom: 50px;
+    color: black;
+    border: solid 3px black;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+#botonwave:hover {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    padding: 20px 70px 20px 70px;
+    transform: translate(22px,5px);
+    font-size: 18px
+}
+#botonwave:active {
+    background-color: rgb(150, 150, 150);
+    color: black;
+}
+/*TIPOGRAFÍA*/
+* {
+    font-family: "Croissant One", cursive;
+}
+/*ENLACE PUNTOS DE VENTA*/
+#puntosventa:link, #puntosventa:visited {
+    color: white;
+}
+/*SECCIÓN PRINCIPAL*/
+.principal {
+    position: relative;
+}
+/*FOTO SIX SEX INICIO*/
+#sixsex {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: -6px;
+}
+/*GRILLA PRINCIPAL*/
+.grid {
+    display:grid;
+    grid-template-rows: 68px 1fr 200px;
+}
+/*PÁGINAS DE PRODUCTOS*/
+.productos {
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,auto);
+    justify-content: space-evenly;
+    gap: 50px;
+    margin: 50px;
+    line-height: 1.5;
+}
+/*CUERPO INFO Y CONTACTO*/
+.info, .contacto {
+    margin: 70px;
+    line-height: 2.5;
+}
+/*VISTA MOBILE*/
+@media screen and (max-width: 950px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    .navDesktop, .redes, #busqueda, #carrito, #botonwave {
+        display: none;
+    }
+    header {
+        display: flex;
+        position: relative;
+        width: 100%;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center ;
+        font-size: 13px;
+        width: 100%;
+        justify-content:space-evenly ;
+        padding: 20px 0px 20px 0px;
+    }
+    .logo {
+        position: absolute;
+        left: 35%;
+        top: 15%
+    }
+    .grid {
+        grid-template-rows: 100px auto 400px;
+    }
+    .horizontal {
+        width: 100%;
+        border-top: 3px solid black;
+        margin-bottom: -6px
+    }
+    .iconoBusqueda {
+        width: 40px
+    }
+    /*PRODUCTOS*/
+    .productos {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(9,auto);
+        margin: 30px
+    }
+    /*MENU BURGER*/
+    .navBurger {
+        display: none;
+    }
+    .checkBurger:checked ~ ul {
+        display: flex;
+        flex-direction: column
+    }
+    .checkBurger {
+        display: none;
+    }
+    .menuBurger {
+        position: relative;
+    }
+    .navBurger {
+        position:absolute;
+        z-index: 2;
+    }
+    .burger_boton {
+        text-decoration: none;
+        color:white;
+        font-size: 20px;
+    }
+    .listaBurger {
+        background-color: black;
+        text-align: center;
+        padding: 10px 30px 10px 30px;
+    }
+    .listaBurger:hover {
+        background-color:rgb(30, 30, 30);
+    }
+    /*MAPAS*/
+    iframe {
+        width: 200px;
+        height: 200px;
+    }
+    /*INPUTS*/
+    textarea, input {
+        width: 200px
+    }
+    /*INFO Y CONTACTO*/
+    .info, .contacto {
+        margin: 40px;
+        line-height: 2;
+    }
+}
+/*VISTA DESKTOP*/
+@media screen and (min-width: 950px) {
+    .iconoBusqueda {
+        display:none;
+    }
+    .horizontal {
+        display: none;
+    }
+    .menuBurger {
+        display: none;
+    }
+    .redesMobile {
+        display:none;
+    }
+}

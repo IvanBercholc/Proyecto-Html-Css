@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+        <title>RICA</title>
+        <link rel="icon" type="image/x-icon" href="../assets/ricaicono.png">
+    </head>
+<body class="grid">
+    <header class="header">
+        <nav class="menuBurger">
+            <input class="checkBurger" type="checkbox" id="burger">
+            <label for="burger"><img src="../assets/menu-hamburguesa.png" width="40px"></label>
+            <ul class="navBurger">
+                <li class="listaBurger"><a class="burger_boton" href="../pages/WAVE.html">WAVE</a></li>
+                <li class="listaBurger"><a class="burger_boton" href="../pages/CUIN.html">CUIN</a></li>
+                <li class="listaBurger"><a class="burger_boton" href="../pages/BASICS.html">BASICS</a></li>
+                <li class="listaBurger"><a class="burger_boton" href="../pages/INFO.html">INFO</a></li>
+                <li class="listaBurger"><a class="burger_boton" href="../pages/CONTACTO.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <h1><a href=../index.html>RICA</a></h1>
+        <a href=../index.html><img class="logo"src="../assets/ricalogo.png" width="100px"></a>
+        <nav class="navDesktop">
+            <ul>
+                <li><a class="nav__boton" href="WAVE.html">WAVE</a></li>
+                <li><a class="nav__boton" href="CUIN.html">CUIN</a></li>
+                <li><a class="nav__boton" href="BASICS.html">BASICS</a></li>
+                <li><a class="nav__boton" href="INFO.html">INFO</a></li>
+                <li><a class="nav__boton" href="CONTACTO.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <input id="busqueda" type="search" placeholder="Buscar...">
+        <a href="#" id="carrito"><img src="../assets/carrito.png" width="30px" height="auto"></a>
+        <section class="redes">
+            <a href="https://www.instagram.com/rica.com.ar/" target="_blank"><img src="../assets/instagram.png" width="25px" height="auto"></a>
+            <a href="https://wa.me/1130782402" target="_blank"><img src="../assets/whatsapp.png" width="25px" height="auto"></a>     
+        </section>
+        <a href="#">
+            <img class="iconoBusqueda" src="../assets/busqueda.png">
+        </a>
+    </header>
+        <section class="contacto">
+            <form action="#" method="get" enctype="multipart/form-data">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required><br>
+                <label for="mail">Mail:</label>
+                <input type="email" id="mail" name="mail" required><br>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="01144443333"><br>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe aquí..." rows="10" cols="30"></textarea><br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Restablecer">
+            </form>
+        </section>
+        <footer class="footer">
+            <section>
+                <h3><a id="puntosventa" href="../pages/INFO.html">Puntos de venta</a></h3>
+                <p>Cabildo 3011 8E, Studio PM4, CABA</p>
+                <p>Aguirre 1167, Fortaleza Aguirre, CABA</p>
+                <br>
+            </section>
+            <section>
+                <h3>Contacto</h3>
+                <p>rica.indumentaria@gmail.com</p>
+                <p>03329570161</p>
+                <p>Terrero 761, 6to B. Caba</p> 
+            </section>
+            <section class="redesMobile">
+                <a href="https://www.instagram.com/rica.com.ar/" target="_blank"><img src="../assets/instagram.png" width="25px" height="auto"></a>
+                <a href="https://wa.me/1130782402" target="_blank"><img src="../assets/whatsapp.png" width="25px" height="auto"></a>     
+            </section>    
+        </footer>
+</body>
+</html>
