@@ -129,6 +129,18 @@ h1 a:hover {
     margin: 70px;
     line-height: 2.5;
 }
+/*ANIMACIÓN HEADER*/
+.animado {
+    animation: animacion 2s ease-in-out 0s 1
+}
+@keyframes animacion {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 /*VISTA MOBILE*/
 @media screen and (max-width: 950px) {
     * {
