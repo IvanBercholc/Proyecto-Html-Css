@@ -2,6 +2,14 @@
     margin: 0px;
     padding: 0px;
 }
+body,ul,li,nav,header,body,footer,h1,h2,h3,h4,h5,h6,p,section,div {
+    margin: 0px;
+    padding: 0px;
+    line-height: normal;
+}
+input {
+    font-size: 16px;
+}
 /*HEADER*/
 header {
     color: rgb(247, 247, 247); background-color: black;
@@ -10,6 +18,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    z-index: 4;
 }
 /*FOOTER*/
 footer {
@@ -19,12 +28,26 @@ footer {
     line-height: 2.5;
     display: flex;
     justify-content: space-evenly;
+    padding-top: 10px;
 }
+footer p,h1,h2,h3,h4,h5,h6 {
+    line-height: 2.5;
+}
+footer h5 {
+    font-weight: bold;
+}
+.redesMobile {
+    align-self: center;
+}
+.redesMobile a {
+    margin: 3px
+}
+
 /*LOGO RICA*/
 .logo {
     position: absolute;
-    top: 3px;
-    left: 5px;
+    top: 10px;
+    left: 10px;
     transition: transform 0.5s;
 }
 .logo:hover {
@@ -40,6 +63,8 @@ nav li {
     text-decoration: none;
     padding: 22px 10px 22px 10px;
     transition: all 0.2s;
+    line-height: normal;
+    margin: 0px;
 }
 .nav__boton:hover {
     background-color: rgb(30, 30, 30) ;
@@ -54,6 +79,9 @@ h1 a:link, h1 a:visited {
 h1 a:hover {
     background-color: black;    
 }
+h1 {
+    line-height: normal;
+}
 /*REDES*/
 .redes {
     display: flex;
@@ -67,10 +95,10 @@ h1 a:hover {
 /*BOTÓN INICIO*/
 #botonwave:link, #botonwave:visited { 
     background-color: rgb(150,150,150);
-    padding: 15px 55px 15px 55px;
+    padding: 10px 55px 10px 55px;
     position:absolute;
-    right: 150px;
-    bottom: 50px;
+    right: 30px;
+    bottom: 30px;
     color: black;
     border: solid 3px black;
     border-radius: 50px;
@@ -81,16 +109,15 @@ h1 a:hover {
 #botonwave:hover {
     background-color: rgb(20, 20, 20);
     color: white;
-    padding: 20px 70px 20px 70px;
-    transform: translate(22px,5px);
-    font-size: 18px
+    padding: 10px 100px 10px 100px;
+    /*transform: translate(22px,5px);*/
 }
 #botonwave:active {
     background-color: rgb(150, 150, 150);
     color: black;
 }
 /*TIPOGRAFÍA*/
-* {
+nav {
     font-family: "Croissant One", cursive;
 }
 /*ENLACE PUNTOS DE VENTA*/
@@ -104,7 +131,7 @@ h1 a:hover {
 /*FOTO SIX SEX INICIO*/
 #sixsex {
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 68px);
     max-width: 100%;
     max-height: 100%;
     margin-bottom: -6px;
@@ -124,14 +151,29 @@ h1 a:hover {
     margin: 50px;
     line-height: 1.5;
 }
+.productos article p,h1,h2,h3,h4,h5,h6 {
+    line-height: 2;
+}
 /*CUERPO INFO Y CONTACTO*/
 .info, .contacto {
     margin: 70px;
     line-height: 2.5;
 }
+.info ul li {
+    line-height: 2.5;
+}
+.puntos-venta {
+    list-style-type: square;
+}
+.info input,.contacto input {
+    line-height: 2;
+}
+textarea {
+    height: 200px
+}
 /*ANIMACIÓN HEADER*/
 .animado {
-    animation: animacion 1s ease-in-out 0s 1
+    animation: animacion 0.5s ease-in-out 0s 1
 }
 @keyframes animacion {
     from {
@@ -147,7 +189,7 @@ h1 a:hover {
         margin: 0px;
         padding: 0px;
     }
-    .navDesktop, .redes, #busqueda, #carrito, #botonwave {
+    .navDesktop, #busqueda, #carrito, #botonwave {
         display: none;
     }
     header {
@@ -180,12 +222,23 @@ h1 a:hover {
     .iconoBusqueda {
         width: 40px
     }
+    /*FOTO SIX SEX INICIO*/
+    #sixsex {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: -6px;
+    }
     /*PRODUCTOS*/
     .productos {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: repeat(9,auto);
         margin: 30px
+    }
+    article p {
+        line-height: 2;
     }
     /*MENU BURGER*/
     .navBurger {
@@ -218,6 +271,9 @@ h1 a:hover {
     .listaBurger:hover {
         background-color:rgb(30, 30, 30);
     }
+    a:hover {
+        color:white;
+    }
     /*MAPAS*/
     iframe {
         width: 200px;
@@ -243,8 +299,5 @@ h1 a:hover {
     }
     .menuBurger {
         display: none;
-    }
-    .redesMobile {
-        display:none;
     }
 }
