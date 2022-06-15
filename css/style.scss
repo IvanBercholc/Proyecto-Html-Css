@@ -7,9 +7,6 @@ body,ul,li,nav,header,body,footer,h1,h2,h3,h4,h5,h6,p,section,div {
     padding: 0px;
     line-height: normal;
 }
-input {
-    font-size: 16px;
-}
 /*HEADER*/
 header {
     color: rgb(247, 247, 247); background-color: black;
@@ -109,6 +106,7 @@ h1 {
     text-decoration: none;
     font-weight: bold;
     transition: all 0.5s;
+    z-index: 2;
 }
 #botonwave:hover {
     background-color: rgb(20, 20, 20);
@@ -222,7 +220,7 @@ textarea {
     .logo {
         position: absolute;
         left: 38%;
-        top: 25%
+        top: 25%;
     }
     .grid {
         grid-template-rows: 100px auto 400px;
