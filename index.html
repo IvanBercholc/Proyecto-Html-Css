@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">      
     <title>RICA</title>
     <link rel="icon" type="image/x-icon" href="./assets/ricaicono.png">
 </head>
@@ -16,7 +17,7 @@
     <header class="header">
         <nav class="menuBurger">
             <input class="checkBurger" type="checkbox" id="burger">
-            <label for="burger"><img src="./assets/menu-hamburguesa.png" width="40px"></label>
+            <label for="burger"><img src="./assets/menu-hamburguesa.png" width="30px"></label>
             <ul class="navBurger">
                 <li class="listaBurger"><a class="burger_boton" href="./pages/wave.html">WAVE</a></li>
                 <li class="listaBurger"><a class="burger_boton" href="./pages/cuin.html">CUIN</a></li>
@@ -42,15 +43,48 @@
             <img class="iconoBusqueda" src="./assets/busqueda.png">
         </a>
     </header>
-    <main class="principal">
+
+<main class="principal">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img id="sixsex" src="./assets/six31.jpg" class="d-block w-100" alt="six sex wave">
+            <a id="botonwave" href="./pages/wave.html">Nueva colección Wave</a>
+          </div>
+          <div class="carousel-item">
+            <img id="cuin-index" src="./assets/cuin-index.jpg" class="d-block w-100" alt="cuin">
+            <a id="botonwave" href="./pages/cuin.html">Colección Cuin</a>
+        </div>
+        <div class="carousel-item">
+            <img id="basics-index" src="./assets/basics-index.jpg" class="d-block w-100" alt="basics">
+            <a id="botonwave" href="./pages/basics.html">Colección Basics</a>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <article>
+        <img class="horizontal" src="./assets/horizontal-wave.png">
+    </article>
+</main>    
+    
+    <!-- <main class="principal">
         <article>
             <img id="sixsex" src="./assets/six31.jpg" alt="six sex wave">
-            <a id="botonwave" href="./pages/WAVE.html">NUEVA COLECCIÓN WAVE</a>
+            <a id="botonwave" href="./pages/wave.html">NUEVA COLECCIÓN WAVE</a>
         </article>
         <article>
             <img class="horizontal" src="./assets/horizontal-wave.png">
         </article>
-    </main>
+    </main> -->
+
+
     <footer class="footer">
         <div>
             <h5><a id="puntosventa" href="./pages/info.html">Puntos de venta</a></h3>

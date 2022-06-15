@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">      
         <title>RICA</title>
         <link rel="icon" type="image/x-icon" href="../assets/ricaicono.png">
     </head>
@@ -16,7 +17,7 @@
     <header class="header">
         <nav class="menuBurger">
             <input class="checkBurger" type="checkbox" id="burger">
-            <label for="burger"><img src="../assets/menu-hamburguesa.png" width="40px"></label>
+            <label for="burger"><img src="../assets/menu-hamburguesa.png" width="30px"></label>
             <ul class="navBurger">
                 <li class="listaBurger"><a class="burger_boton" href="wave.html">WAVE</a></li>
                 <li class="listaBurger"><a class="burger_boton" href="cuin.html">CUIN</a></li>
@@ -47,30 +48,31 @@
                 <img src="../assets/camisola-negra.jpg" width="230" height="300">
                 <h5>Camisola Negra</h5>
                 <p>$4.300,00</p>
-                <button>Comprar</button>
+                <button type="button" class="btn btn-light">Añadir al carrito</button>            </article>
             </article>
             <article>
                 <img src="../assets/cancan-liga-negra.jpg" width="230" height="300">
                 <h5>Cancan Liga Negra</h5>
                 <p>$3.600,00</p>
-                <button>Comprar</button>
+                <button type="button" class="btn btn-light">Añadir al carrito</button>            </article>
             </article>
             <article>
                 <img src="../assets/polera-oxido-negra.jpg" width="230" height="300">
                 <h5>Polera Óxido Negra</h5>
                 <p>$3.200,00</p>
-                <button>Comprar</button>
+                <button type="button" class="btn btn-light">Añadir al carrito</button>            </article>
             </article>
             <article>
                 <img src="../assets/vestido-americano.jpg" width="230" height="300">
                 <h5>Vestido Americano</h5>
                 <p>$2.050,00</p>
-                <select>
-                    <option>Negro</option>
-                    <option>Amarillo</option>
-                    <option>Verde</option>
-                </select>
-                <button>Comprar</button>
+                <select class="btn btn-light">
+                    <option selected>Color</option>      
+                      <option>Negro</option>
+                      <option>Verde</option>
+                      <option>Amarillo</option>
+                </select>                
+                  <button type="button" class="btn btn-light">Añadir al carrito</button>            </article>
             </article>
         </section>
         <footer class="footer">
@@ -91,5 +93,6 @@
                 <a href="https://wa.me/1130782402" target="_blank"><img src="../assets/whatsapp.png" width="25px" height="auto"></a>     
             </section>    
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

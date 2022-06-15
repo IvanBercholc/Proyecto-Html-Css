@@ -1,0 +1,321 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body,ul,li,nav,header,body,footer,h1,h2,h3,h4,h5,h6,p,section,div {
+    margin: 0px;
+    padding: 0px;
+    line-height: normal;
+}
+input {
+    font-size: 16px;
+}
+/*HEADER*/
+header {
+    color: rgb(247, 247, 247); background-color: black;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 4;
+    /*box-shadow: 0px 10px 10px -6px black;*/
+}
+/*FOOTER*/
+footer {
+    color: rgb(247, 247, 247); 
+    background-color: black;
+    max-width: 100%;
+    line-height: 2.5;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+footer p,h1,h2,h3,h4,h5,h6 {
+    line-height: 2.5;
+}
+footer h5 {
+    font-weight: bold;
+}
+.redesMobile {
+    align-self: center;
+}
+.redesMobile a {
+    margin: 3px
+}
+
+/*LOGO RICA*/
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: transform 0.5s;
+}
+.logo:hover {
+    transform: scale(110%)translate(4px)
+}
+/*MENU*/
+nav li {
+    display: inline;
+}
+/*BOTÓNES MENU*/
+.nav__boton:link, .nav__boton:visited {
+    color:rgb(247, 247, 247);
+    text-decoration: none;
+    padding: 22px 10px 22px 10px;
+    transition: all 0.2s;
+    line-height: normal;
+    margin: 0px;
+}
+.nav__boton:hover {
+    /*background-color: rgb(30, 30, 30) ;*/
+    text-decoration: none;
+    /*border-radius: 1rem;*/
+    /*box-shadow: 0px 10px 10px -6px black;*/
+    color:rgb(100, 100, 100)
+}
+.nav__boton:active {
+    background-color: black;
+}
+h1 a:link, h1 a:visited {
+    color: black;
+}
+h1 a:hover {
+    background-color: black;    
+}
+h1 {
+    line-height: normal;
+}
+/*REDES*/
+.redes {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.redes a{
+    margin: 3px;
+}
+/*BOTÓN INICIO*/
+#botonwave:link, #botonwave:visited { 
+    background-color: rgb(150,150,150);
+    padding: 10px 55px 10px 55px;
+    position:absolute;
+    right: 100px;
+    bottom: 30px;
+    color: black;
+    border: solid 3px black;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+#botonwave:hover {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    padding: 10px 100px 10px 100px;
+    /*transform: translate(22px,5px);*/
+}
+#botonwave:active {
+    background-color: rgb(150, 150, 150);
+    color: black;
+}
+/*TIPOGRAFÍA*/
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+.nav__boton {
+    font-family: "Croissant One", cursive;
+}
+/*ENLACE PUNTOS DE VENTA*/
+#puntosventa:link, #puntosventa:visited {
+    color: white;
+}
+/*SECCIÓN PRINCIPAL*/
+.principal {
+    position: relative;
+}
+/*FOTO SIX SEX INICIO*/
+#sixsex, #cuin-index, #basics-index {
+    width: 100%;
+    height: calc(100vh - 68px);
+    max-width: 100%;
+    max-height: 100%;
+    /*margin-bottom: -6px;*/
+}
+/*GRILLA PRINCIPAL*/
+.grid {
+    display:grid;
+    grid-template-rows: 68px 1fr 200px;
+}
+/*PÁGINAS DE PRODUCTOS*/
+.productos {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: space-evenly;
+    gap: 50px;
+    margin: 50px;
+    line-height: 1.5;
+}
+.productos article p,h1,h2,h3,h4,h5,h6 {
+    line-height: 2;
+}
+.btn-light {
+    border: 1px solid black
+}
+/*CUERPO INFO Y CONTACTO*/
+.info, .contacto {
+    margin: 50px;
+    line-height: 2.5;
+}
+.info {
+    margin: 70px;
+}
+.info ul li {
+    line-height: 2.5;
+}
+.puntos-venta {
+    list-style-type: square;
+}
+.info input,.contacto input {
+    line-height: 2;
+}
+textarea {
+    height: 200px
+}
+/*ANIMACIÓN HEADER*/
+.animado {
+    animation: animacion 0.5s ease-in-out 0s 1
+}
+@keyframes animacion {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/*VISTA MOBILE*/
+@media screen and (max-width: 950px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    .navDesktop, #busqueda, #carrito, #botonwave {
+        display: none;
+    }
+    header {
+        display: flex;
+        position: relative;
+        width: 100%;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center ;
+        font-size: 13px;
+        width: 100%;
+        justify-content:space-evenly ;
+        padding: 20px 0px 20px 0px;
+    }
+    .logo {
+        position: absolute;
+        left: 38%;
+        top: 25%
+    }
+    .grid {
+        grid-template-rows: 100px auto 400px;
+    }
+    .horizontal {
+        width: 100%;
+        border-top: 3px solid black;
+        margin-bottom: -6px
+    }
+    .iconoBusqueda {
+        width: 30px
+    }
+    /*FOTO SIX SEX INICIO*/
+        #sixsex, #cuin-index, #basics-index {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        /*margin-bottom: -6px;*/
+    }
+    /*PRODUCTOS*/
+    .productos {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+        margin: 30px
+    }
+    article p {
+        line-height: 2;
+    }
+    /*MENU BURGER*/
+    .navBurger {
+        display: none;
+    }
+    .checkBurger:checked ~ ul {
+        display: flex;
+        flex-direction: column
+    }
+    .checkBurger {
+        display: none;
+    }
+    .menuBurger {
+        position: relative;
+    }
+    .navBurger {
+        position:absolute;
+        z-index: 2;
+    }
+    .burger_boton {
+        text-decoration: none;
+        color:white;
+        font-size: 20px;
+    }
+    .listaBurger {
+        background-color: black;
+        text-align: center;
+        padding: 10px 30px 10px 30px;
+    }
+    .listaBurger:hover {
+        background-color:rgb(30, 30, 30);
+    }
+    a:hover {
+        color:white;
+    }
+    /*MAPAS*/
+    iframe {
+        width: 200px;
+        height: 200px;
+    }
+    /*INPUTS*/
+    textarea, input {
+        width: 200px
+    }
+    /*INFO Y CONTACTO*/
+    .info, .contacto {
+        margin: 40px;
+        line-height: 2;
+    }
+}
+/*VISTA DESKTOP*/
+@media screen and (min-width: 950px) {
+    .iconoBusqueda {
+        display:none;
+    }
+    .horizontal {
+        display: none;
+    }
+    .menuBurger {
+        display: none;
+    }
+    .contacto form {
+        border: 1px solid black;
+        padding: 30px;
+        border-radius: 2rem;
+    }
+}
