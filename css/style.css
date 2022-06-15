@@ -395,12 +395,28 @@ textarea {
   }
   /*INPUTS*/
   textarea, input {
-    width: 200px;
+    width: calc(100vw - 80px);
+    line-height: 2rem;
+    padding-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
   /*INFO Y CONTACTO*/
   .info, .contacto {
     margin: 40px;
     line-height: 2;
+  }
+  .formulario-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .salto-mobile {
+    display: none;
   }
 }
 

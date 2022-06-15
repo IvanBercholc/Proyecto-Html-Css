@@ -294,12 +294,23 @@ textarea {
     }
     /*INPUTS*/
     textarea, input {
-        width: 200px
+        width: calc(100vw - 80px);
+        line-height: 2rem;
+        padding-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
     /*INFO Y CONTACTO*/
     .info, .contacto {
         margin: 40px;
         line-height: 2;
+    }
+    .formulario-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+    .salto-mobile {
+        display: none;
     }
 }
 /*VISTA DESKTOP*/
