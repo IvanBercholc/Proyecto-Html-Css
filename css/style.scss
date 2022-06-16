@@ -46,10 +46,10 @@ footer h5 {
     position: absolute;
     top: 10px;
     left: 10px;
-    transition: transform 0.5s;
+    transition: transform 0.5s
 }
 .logo:hover {
-    transform: scale(110%)translate(4px)
+    transform: scale(110%)translate(4px);
 }
 /*MENU*/
 nav li {
@@ -69,7 +69,7 @@ nav li {
     text-decoration: none;
     /*border-radius: 1rem;*/
     /*box-shadow: 0px 10px 10px -6px black;*/
-    color:rgb(100, 100, 100)
+    color:rgb(150, 150, 150)
 }
 .nav__boton:active {
     background-color: black;
@@ -98,8 +98,8 @@ h1 {
     background-color: rgb(150,150,150);
     padding: 10px 55px 10px 55px;
     position:absolute;
-    right: 100px;
-    bottom: 30px;
+    right: 20%;
+    bottom: 10%;
     color: black;
     border: solid 3px black;
     border-radius: 50px;
@@ -152,15 +152,20 @@ h1 {
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
     justify-content: space-evenly;
-    gap: 50px;
-    margin: 50px;
+    align-items: center;
+    column-gap: 50px;
+    row-gap: 70px;
+    margin: 70px;
     line-height: 1.5;
 }
 .productos article p,h1,h2,h3,h4,h5,h6 {
     line-height: 2;
 }
 .btn-light {
-    border: 1px solid black
+    border: 1px solid black;
+    &:hover {
+        border: 1px solid rgb(180, 180, 180)
+    }
 }
 /*CUERPO INFO Y CONTACTO*/
 .info, .contacto {
@@ -246,7 +251,7 @@ textarea {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto auto auto auto auto;
-        margin: 30px
+        margin: 30px 10px 10px 10px;
     }
     article p {
         line-height: 2;
