@@ -1,3 +1,5 @@
+@import "colores";
+
 * {
     margin: 0px;
     padding: 0px;
@@ -27,18 +29,18 @@ footer {
     display: flex;
     justify-content: space-evenly;
     padding-top: 10px;
-}
-footer p,h1,h2,h3,h4,h5,h6 {
-    line-height: 2.5;
-}
-footer h5 {
-    font-weight: bold;
+    p,h1,h2,h3,h4,h5,h6 {
+        line-height: 2.5;
+    }
+    h5 {
+        font-weight: bold;
+    }
 }
 .redesMobile {
     align-self: center;
-}
-.redesMobile a {
-    margin: 3px
+    a {
+        margin: 3px
+    }
 }
 
 /*LOGO RICA*/
@@ -46,15 +48,17 @@ footer h5 {
     position: absolute;
     top: 10px;
     left: 10px;
-    transition: transform 0.5s
+    transition: transform 0.5s;
+    &:hover {
+        transform: scale(110%)translate(4px);
+    }
 }
-.logo:hover {
-    transform: scale(110%)translate(4px);
-}
+
 /*MENU*/
 nav li {
     display: inline;
 }
+
 /*BOTÓNES MENU*/
 .nav__boton:link, .nav__boton:visited {
     color:rgb(247, 247, 247);
@@ -69,7 +73,7 @@ nav li {
     text-decoration: none;
     /*border-radius: 1rem;*/
     /*box-shadow: 0px 10px 10px -6px black;*/
-    color:rgb(150, 150, 150)
+    color: $gris-clarito
 }
 .nav__boton:active {
     background-color: black;
@@ -83,19 +87,21 @@ h1 a:hover {
 h1 {
     line-height: normal;
 }
+
 /*REDES*/
 .redes {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
+    a{
+        margin: 3px;
+    }
 }
-.redes a{
-    margin: 3px;
-}
+
 /*BOTÓN INICIO*/
 #botonwave:link, #botonwave:visited { 
-    background-color: rgb(150,150,150);
+    background-color: $gris-clarito;
     padding: 10px 55px 10px 55px;
     position:absolute;
     right: 20%;
@@ -115,9 +121,10 @@ h1 {
     /*transform: translate(22px,5px);*/
 }
 #botonwave:active {
-    background-color: rgb(150, 150, 150);
+    background-color: $gris-clarito;
     color: black;
 }
+
 /*TIPOGRAFÍA*/
 * {
     font-family: 'Ubuntu', sans-serif;
@@ -125,14 +132,17 @@ h1 {
 .nav__boton {
     font-family: "Croissant One", cursive;
 }
+
 /*ENLACE PUNTOS DE VENTA*/
 #puntosventa:link, #puntosventa:visited {
     color: white;
 }
+
 /*SECCIÓN PRINCIPAL*/
 .principal {
     position: relative;
 }
+
 /*FOTO SIX SEX INICIO*/
 #sixsex, #cuin-index, #basics-index {
     width: 100%;
@@ -141,11 +151,13 @@ h1 {
     max-height: 100%;
     /*margin-bottom: -6px;*/
 }
+
 /*GRILLA PRINCIPAL*/
 .grid {
     display:grid;
     grid-template-rows: 68px 1fr 200px;
 }
+
 /*PÁGINAS DE PRODUCTOS*/
 .productos {
     display:grid;
@@ -157,36 +169,38 @@ h1 {
     row-gap: 70px;
     margin: 70px;
     line-height: 1.5;
-}
-.productos article p,h1,h2,h3,h4,h5,h6 {
-    line-height: 2;
+    article p,h1,h2,h3,h4,h5,h6 {
+        line-height: 2;
+    }
 }
 .btn-light {
     border: 1px solid black;
     &:hover {
-        border: 1px solid rgb(180, 180, 180)
+        border: 1px solid $gris-clarito;
     }
 }
+
 /*CUERPO INFO Y CONTACTO*/
 .info, .contacto {
     margin: 50px;
     line-height: 2.5;
+    input {
+        line-height: 2;
+    }
 }
 .info {
     margin: 70px;
-}
-.info ul li {
-    line-height: 2.5;
+    ul li {
+        line-height: 2.5;
+    }
 }
 .puntos-venta {
     list-style-type: square;
 }
-.info input,.contacto input {
-    line-height: 2;
-}
 textarea {
     height: 200px
 }
+
 /*ANIMACIÓN HEADER*/
 .animado {
     animation: animacion 0.5s ease-in-out 0s 1
@@ -199,6 +213,7 @@ textarea {
         opacity: 1;
     }
 }
+
 /*VISTA MOBILE*/
 @media screen and (max-width: 950px) {
     * {
@@ -283,9 +298,9 @@ textarea {
         background-color: black;
         text-align: center;
         padding: 10px 30px 10px 30px;
-    }
-    .listaBurger:hover {
-        background-color:rgb(30, 30, 30);
+        &:hover {
+            background-color:rgb(30, 30, 30);
+        }
     }
     a:hover {
         color:white;
