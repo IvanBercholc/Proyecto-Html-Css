@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*COLORES*/
+/*BOTONES*/
 * {
   margin: 0px;
   padding: 0px;
@@ -12,7 +14,7 @@ body, ul, li, nav, header, body, footer, h1, h2, h3, h4, h5, h6, p, section, div
 
 /*HEADER*/
 header {
-  color: #f7f7f7;
+  color: white;
   background-color: black;
   width: 100%;
   max-width: 100%;
@@ -25,12 +27,13 @@ header {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   z-index: 4;
-  /*box-shadow: 0px 10px 10px -6px black;*/
+  -webkit-box-shadow: 0px 8px 8px -8px black;
+          box-shadow: 0px 8px 8px -8px black;
 }
 
 /*FOOTER*/
 footer {
-  color: #f7f7f7;
+  color: white;
   background-color: black;
   max-width: 100%;
   line-height: 2.5;
@@ -43,7 +46,7 @@ footer {
   padding-top: 10px;
 }
 
-footer p, h1, h2, h3, h4, h5, h6 {
+footer p, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
   line-height: 2.5;
 }
 
@@ -84,7 +87,7 @@ nav li {
 
 /*BOTÓNES MENU*/
 .nav__boton:link, .nav__boton:visited {
-  color: #f7f7f7;
+  color: white;
   text-decoration: none;
   padding: 22px 10px 22px 10px;
   -webkit-transition: all 0.2s;
@@ -94,10 +97,7 @@ nav li {
 }
 
 .nav__boton:hover {
-  /*background-color: rgb(30, 30, 30) ;*/
   text-decoration: none;
-  /*border-radius: 1rem;*/
-  /*box-shadow: 0px 10px 10px -6px black;*/
   color: #969696;
 }
 
@@ -139,13 +139,13 @@ h1 {
 
 /*BOTÓN INICIO*/
 #botonwave:link, #botonwave:visited {
+  border: solid 2px black;
   background-color: #969696;
+  color: black;
   padding: 10px 55px 10px 55px;
   position: absolute;
   right: 20%;
   bottom: 10%;
-  color: black;
-  border: solid 3px black;
   border-radius: 50px;
   text-decoration: none;
   font-weight: bold;
@@ -155,14 +155,14 @@ h1 {
 }
 
 #botonwave:hover {
+  border: solid 2px black;
   background-color: #141414;
   color: white;
   padding: 10px 100px 10px 100px;
-  /*transform: translate(22px,5px);*/
 }
 
 #botonwave:active {
-  background-color: #969696;
+  border: solid 2px black;
   color: black;
 }
 
@@ -171,7 +171,7 @@ h1 {
   font-family: 'Ubuntu', sans-serif;
 }
 
-.nav__boton {
+.nav__boton, .burger_boton {
   font-family: "Croissant One", cursive;
 }
 
@@ -191,7 +191,6 @@ h1 {
   height: calc(100vh - 68px);
   max-width: 100%;
   max-height: 100%;
-  /*margin-bottom: -6px;*/
 }
 
 /*GRILLA PRINCIPAL*/
@@ -223,26 +222,30 @@ h1 {
   line-height: 1.5;
 }
 
-.productos article p, h1, h2, h3, h4, h5, h6 {
+.productos article p, .productos h1, .productos h2, .productos h3, .productos h4, .productos h5, .productos h6 {
   line-height: 2;
 }
 
 .btn-light {
-  border: 1px solid black;
+  border: solid 1px black;
+  background-color: white;
+  color: black;
 }
 
 .btn-light:hover {
-  border: 1px solid #b4b4b4;
+  border: solid 1px #969696;
+  background-color: white;
+  color: black;
 }
 
 /*CUERPO INFO Y CONTACTO*/
-.info, .contacto {
+.contacto, .info {
   margin: 50px;
   line-height: 2.5;
 }
 
-.info {
-  margin: 70px;
+.contacto input, .info input {
+  line-height: 2;
 }
 
 .info ul li {
@@ -251,10 +254,6 @@ h1 {
 
 .puntos-venta {
   list-style-type: square;
-}
-
-.info input, .contacto input {
-  line-height: 2;
 }
 
 textarea {
@@ -340,7 +339,6 @@ textarea {
     height: 100%;
     max-width: 100%;
     max-height: 100%;
-    /*margin-bottom: -6px;*/
   }
   /*PRODUCTOS*/
   .productos {
@@ -389,7 +387,7 @@ textarea {
     padding: 10px 30px 10px 30px;
   }
   .listaBurger:hover {
-    background-color: #1e1e1e;
+    background-color: #141414;
   }
   a:hover {
     color: white;
@@ -408,7 +406,7 @@ textarea {
     margin-bottom: 5px;
   }
   /*INFO Y CONTACTO*/
-  .info, .contacto {
+  .info, .contacto, .info {
     margin: 40px;
     line-height: 2;
   }
@@ -437,7 +435,7 @@ textarea {
   .menuBurger {
     display: none;
   }
-  .contacto form {
+  .formulario-desktop {
     border: 1px solid black;
     padding: 30px;
     border-radius: 2rem;

@@ -1,0 +1,6 @@
+/*BOTONES*/
+@mixin boton ($borde, $color, $texto){
+    border: $borde;
+    background-color: $color;
+    color: $texto;
+}
