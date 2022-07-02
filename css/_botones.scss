@@ -1,6 +1,62 @@
 /*BOTONES*/
+
 @mixin boton ($borde, $color, $texto){
     border: $borde;
     background-color: $color;
     color: $texto;
+}
+
+/*BOTÓNES MENU*/
+.nav__boton:link, .nav__boton:visited {
+    color:white;
+    text-decoration: none;
+    padding: 22px 10px 22px 10px;
+    transition: all 0.2s;
+    line-height: normal;
+    margin: 0px;
+}
+.nav__boton:hover {
+    text-decoration: none;
+    color: map-get($mapa-colores, gris-clarito)
+}
+.nav__boton:active {
+    background-color: black;
+}
+h1 a:link, h1 a:visited {
+    color: black;
+}
+h1 a:hover {
+    background-color: black;    
+}
+h1 {
+    line-height: normal;
+}
+
+/*BOTÓN INICIO*/
+#botonwave:link, #botonwave:visited { 
+    @include boton (solid 2px black, map-get($mapa-colores, gris-clarito), black);
+    padding: 10px 55px 10px 55px;
+    position:absolute;
+    right: 20%;
+    bottom: 10%;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s;
+    z-index: 2;
+}
+#botonwave:hover {
+    @include boton (solid 2px black, map-get($mapa-colores, gris-oscuro), white);
+    padding: 10px 100px 10px 100px;
+}
+#botonwave:active {
+    @include boton (solid 2px black, map-get($mapa-colores, gris clarito), black);
+}
+
+/*BOTON COMPRAR*/
+.btn-light {
+    @include boton (solid 1px black, white, black);
+    &:hover {
+        @include boton (solid 1px map-get($mapa-colores, gris-clarito), white, black);
+    }
 }

@@ -1,15 +1,87 @@
 @charset "UTF-8";
 /*COLORES*/
 /*BOTONES*/
-* {
+/*BOTÓNES MENU*/
+.nav__boton:link, .nav__boton:visited {
+  color: white;
+  text-decoration: none;
+  padding: 22px 10px 22px 10px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  line-height: normal;
   margin: 0px;
-  padding: 0px;
 }
 
-body, ul, li, nav, header, body, footer, h1, h2, h3, h4, h5, h6, p, section, div {
-  margin: 0px;
-  padding: 0px;
+.nav__boton:hover {
+  text-decoration: none;
+  color: #969696;
+}
+
+.nav__boton:active {
+  background-color: black;
+}
+
+h1 a:link, h1 a:visited {
+  color: black;
+}
+
+h1 a:hover {
+  background-color: black;
+}
+
+h1 {
   line-height: normal;
+}
+
+/*BOTÓN INICIO*/
+#botonwave:link, #botonwave:visited {
+  border: solid 2px black;
+  background-color: #969696;
+  color: black;
+  padding: 10px 55px 10px 55px;
+  position: absolute;
+  right: 20%;
+  bottom: 10%;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 2;
+}
+
+#botonwave:hover {
+  border: solid 2px black;
+  background-color: #141414;
+  color: white;
+  padding: 10px 100px 10px 100px;
+}
+
+#botonwave:active {
+  border: solid 2px black;
+  color: black;
+}
+
+/*BOTON COMPRAR*/
+.btn-light {
+  border: solid 1px black;
+  background-color: white;
+  color: black;
+}
+
+.btn-light:hover {
+  border: solid 1px #969696;
+  background-color: white;
+  color: black;
+}
+
+/*LAYOUT*/
+/*GRILLA PRINCIPAL*/
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 68px 1fr 200px;
+      grid-template-rows: 68px 1fr 200px;
 }
 
 /*HEADER*/
@@ -29,6 +101,48 @@ header {
   z-index: 4;
   -webkit-box-shadow: 0px 8px 8px -8px black;
           box-shadow: 0px 8px 8px -8px black;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.logo:hover {
+  -webkit-transform: scale(110%) translate(4px);
+          transform: scale(110%) translate(4px);
+}
+
+nav li {
+  display: inline;
+}
+
+.animado {
+  -webkit-animation: animacion 0.5s ease-in-out 0s 1;
+          animation: animacion 0.5s ease-in-out 0s 1;
+}
+
+@-webkit-keyframes animacion {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animacion {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*FOOTER*/
@@ -64,60 +178,10 @@ footer h5 {
   margin: 3px;
 }
 
-/*LOGO RICA*/
-.logo {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
-}
-
-.logo:hover {
-  -webkit-transform: scale(110%) translate(4px);
-          transform: scale(110%) translate(4px);
-}
-
-/*MENU*/
-nav li {
-  display: inline;
-}
-
-/*BOTÓNES MENU*/
-.nav__boton:link, .nav__boton:visited {
+#puntosventa:link, #puntosventa:visited {
   color: white;
-  text-decoration: none;
-  padding: 22px 10px 22px 10px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  line-height: normal;
-  margin: 0px;
 }
 
-.nav__boton:hover {
-  text-decoration: none;
-  color: #969696;
-}
-
-.nav__boton:active {
-  background-color: black;
-}
-
-h1 a:link, h1 a:visited {
-  color: black;
-}
-
-h1 a:hover {
-  background-color: black;
-}
-
-h1 {
-  line-height: normal;
-}
-
-/*REDES*/
 .redes {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -137,68 +201,16 @@ h1 {
   margin: 3px;
 }
 
-/*BOTÓN INICIO*/
-#botonwave:link, #botonwave:visited {
-  border: solid 2px black;
-  background-color: #969696;
-  color: black;
-  padding: 10px 55px 10px 55px;
-  position: absolute;
-  right: 20%;
-  bottom: 10%;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  z-index: 2;
-}
-
-#botonwave:hover {
-  border: solid 2px black;
-  background-color: #141414;
-  color: white;
-  padding: 10px 100px 10px 100px;
-}
-
-#botonwave:active {
-  border: solid 2px black;
-  color: black;
-}
-
-/*TIPOGRAFÍA*/
-* {
-  font-family: 'Ubuntu', sans-serif;
-}
-
-.nav__boton, .burger_boton {
-  font-family: "Croissant One", cursive;
-}
-
-/*ENLACE PUNTOS DE VENTA*/
-#puntosventa:link, #puntosventa:visited {
-  color: white;
-}
-
-/*SECCIÓN PRINCIPAL*/
+/*SECCIÓN PRINCIPAL INDEX*/
 .principal {
   position: relative;
 }
 
-/*FOTO SIX SEX INICIO*/
 #sixsex, #cuin-index, #basics-index {
   width: 100%;
   height: calc(100vh - 68px);
   max-width: 100%;
   max-height: 100%;
-}
-
-/*GRILLA PRINCIPAL*/
-.grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 68px 1fr 200px;
-      grid-template-rows: 68px 1fr 200px;
 }
 
 /*PÁGINAS DE PRODUCTOS*/
@@ -224,18 +236,6 @@ h1 {
 
 .productos article p, .productos h1, .productos h2, .productos h3, .productos h4, .productos h5, .productos h6 {
   line-height: 2;
-}
-
-.btn-light {
-  border: solid 1px black;
-  background-color: white;
-  color: black;
-}
-
-.btn-light:hover {
-  border: solid 1px #969696;
-  background-color: white;
-  color: black;
 }
 
 /*CUERPO INFO Y CONTACTO*/
@@ -265,30 +265,16 @@ section h2 {
   margin: 30px 0px 0px 20px;
 }
 
-/*ANIMACIÓN HEADER*/
-.animado {
-  -webkit-animation: animacion 0.5s ease-in-out 0s 1;
-          animation: animacion 0.5s ease-in-out 0s 1;
+/*TIPOGRAFÍA*/
+* {
+  font-family: 'Ubuntu', sans-serif;
 }
 
-@-webkit-keyframes animacion {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.nav__boton, .burger_boton {
+  font-family: "Croissant One", cursive;
 }
 
-@keyframes animacion {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
+/*RESPONSIVE*/
 /*VISTA MOBILE*/
 @media screen and (max-width: 950px) {
   * {
@@ -445,5 +431,17 @@ section h2 {
     padding: 30px;
     border-radius: 2rem;
   }
+}
+
+/*RESETS*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body, ul, li, nav, header, body, footer, h1, h2, h3, h4, h5, h6, p, section, div {
+  margin: 0px;
+  padding: 0px;
+  line-height: normal;
 }
 /*# sourceMappingURL=style.css.map */

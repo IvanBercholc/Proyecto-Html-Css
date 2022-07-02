@@ -1,0 +1,136 @@
+/*RESPONSIVE*/
+
+/*VISTA MOBILE*/
+@media screen and (max-width: 950px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    .navDesktop, #busqueda, #carrito, #botonwave {
+        display: none;
+    }
+    header {
+        display: flex;
+        position: relative;
+        width: 100%;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center ;
+        font-size: 13px;
+        width: 100%;
+        justify-content:space-evenly ;
+        padding: 20px 0px 20px 0px;
+    }
+    .logo {
+        position: absolute;
+        left: 38%;
+        top: 25%;
+    }
+    .grid {
+        grid-template-rows: 100px auto 400px;
+    }
+    .horizontal {
+        width: 100%;
+        border-top: 3px solid black;
+        margin-bottom: -6px
+    }
+    .iconoBusqueda {
+        width: 30px
+    }
+    /*FOTO SIX SEX INICIO*/
+        #sixsex, #cuin-index, #basics-index {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    /*PRODUCTOS*/
+    .productos {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+        margin: 30px 10px 50px 10px;
+    }
+    article p {
+        line-height: 2;
+    }
+    /*MENU BURGER*/
+    .navBurger {
+        display: none;
+    }
+    .checkBurger:checked ~ ul {
+        display: flex;
+        flex-direction: column
+    }
+    .checkBurger {
+        display: none;
+    }
+    .menuBurger {
+        position: relative;
+    }
+    .navBurger {
+        position:absolute;
+        z-index: 2;
+    }
+    .burger_boton {
+        text-decoration: none;
+        color:white;
+        font-size: 20px;
+    }
+    .listaBurger {
+        background-color: black;
+        text-align: center;
+        padding: 10px 30px 10px 30px;
+        &:hover {
+            background-color:map-get($map: $mapa-colores, $key: gris-oscuro);
+        }
+    }
+    a:hover {
+        color:white;
+    }
+    /*MAPAS*/
+    iframe {
+        width: 200px;
+        height: 200px;
+    }
+    /*INPUTS*/
+    textarea, input {
+        width: calc(100vw - 80px);
+        line-height: 2rem;
+        padding-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    /*INFO Y CONTACTO*/
+    .info, .contacto {
+        margin: 40px;
+        line-height: 2;
+    }
+    .formulario-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+    .salto-mobile {
+        display: none;
+    }
+}
+
+/*VISTA DESKTOP*/
+@media screen and (min-width: 950px) {
+    .iconoBusqueda {
+        display:none;
+    }
+    .horizontal {
+        display: none;
+    }
+    .menuBurger {
+        display: none;
+    }
+    .formulario-desktop {
+        border: 1px solid black;
+        padding: 30px;
+        border-radius: 2rem;
+    }
+}
