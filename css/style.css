@@ -6,7 +6,6 @@
   color: white;
   text-decoration: none;
   padding: 22px 10px 22px 10px;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   line-height: normal;
   margin: 0px;
@@ -14,7 +13,7 @@
 
 .nav__boton:hover {
   text-decoration: none;
-  color: #969696;
+  color: rgb(150, 150, 150);
 }
 
 .nav__boton:active {
@@ -36,7 +35,7 @@ h1 {
 /*BOTÓN INICIO*/
 #botonwave:link, #botonwave:visited {
   border: solid 2px black;
-  background-color: #969696;
+  background-color: rgb(150, 150, 150);
   color: black;
   padding: 10px 55px 10px 55px;
   position: absolute;
@@ -45,14 +44,13 @@ h1 {
   border-radius: 50px;
   text-decoration: none;
   font-weight: bold;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   z-index: 2;
 }
 
 #botonwave:hover {
   border: solid 2px black;
-  background-color: #141414;
+  background-color: rgb(20, 20, 20);
   color: white;
   padding: 10px 100px 10px 100px;
 }
@@ -68,9 +66,8 @@ h1 {
   background-color: white;
   color: black;
 }
-
 .btn-light:hover {
-  border: solid 1px #969696;
+  border: solid 1px rgb(150, 150, 150);
   background-color: white;
   color: black;
 }
@@ -78,44 +75,31 @@ h1 {
 /*LAYOUT*/
 /*GRILLA PRINCIPAL*/
 .grid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 68px 1fr 200px;
-      grid-template-rows: 68px 1fr 200px;
+  grid-template-rows: 68px 1fr 200px;
 }
 
 /*HEADER*/
 header {
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: black;
   width: 100%;
   max-width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
   z-index: 4;
-  -webkit-box-shadow: 0px 8px 8px -8px black;
-          box-shadow: 0px 8px 8px -8px black;
+  box-shadow: 0px 8px 8px -8px black;
 }
 
 .logo {
   position: absolute;
   top: 10px;
   left: 10px;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
 }
-
 .logo:hover {
-  -webkit-transform: scale(110%) translate(4px);
-          transform: scale(110%) translate(4px);
+  transform: scale(110%) translate(4px);
 }
 
 nav li {
@@ -123,17 +107,7 @@ nav li {
 }
 
 .animado {
-  -webkit-animation: animacion 0.5s ease-in-out 0s 1;
-          animation: animacion 0.5s ease-in-out 0s 1;
-}
-
-@-webkit-keyframes animacion {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  animation: animacion 0.5s ease-in-out 0s 1;
 }
 
 @keyframes animacion {
@@ -144,36 +118,26 @@ nav li {
     opacity: 1;
   }
 }
-
 /*FOOTER*/
 footer {
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: black;
   max-width: 100%;
   line-height: 2.5;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   padding-top: 10px;
 }
-
 footer p, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
   line-height: 2.5;
 }
-
 footer h5 {
   font-weight: bold;
 }
 
 .redesMobile {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
-
 .redesMobile a {
   margin: 3px;
 }
@@ -183,20 +147,11 @@ footer h5 {
 }
 
 .redes {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
 .redes a {
   margin: 3px;
 }
@@ -215,25 +170,16 @@ footer h5 {
 
 /*PÁGINAS DE PRODUCTOS*/
 .productos {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
-  -ms-grid-rows: auto auto auto;
-      grid-template-rows: auto auto auto;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 50px;
-          column-gap: 50px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  justify-content: space-evenly;
+  align-items: center;
+  column-gap: 50px;
   row-gap: 70px;
   margin: 50px;
   line-height: 1.5;
 }
-
 .productos article p, .productos h1, .productos h2, .productos h3, .productos h4, .productos h5, .productos h6 {
   line-height: 2;
 }
@@ -243,7 +189,6 @@ footer h5 {
   margin: 50px;
   line-height: 2.5;
 }
-
 .contacto input, .info input {
   line-height: 2;
 }
@@ -267,7 +212,7 @@ section h2 {
 
 /*TIPOGRAFÍA*/
 * {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .nav__boton, .burger_boton {
@@ -281,49 +226,47 @@ section h2 {
     margin: 0px;
     padding: 0px;
   }
+
   .navDesktop, #busqueda, #carrito, #botonwave {
     display: none;
   }
+
   header {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     position: relative;
     width: 100%;
   }
+
   footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     text-align: center;
     font-size: 13px;
     width: 100%;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    justify-content: space-evenly;
     padding: 20px 0px 20px 0px;
   }
+
   .logo {
     position: absolute;
     left: 38%;
     top: 25%;
   }
+
   .grid {
-    -ms-grid-rows: 100px auto 400px;
-        grid-template-rows: 100px auto 400px;
+    grid-template-rows: 100px auto 400px;
   }
+
   .horizontal {
     width: 100%;
     border-top: 3px solid black;
     margin-bottom: -6px;
   }
+
   .iconoBusqueda {
     width: 30px;
   }
+
   /*FOTO SIX SEX INICIO*/
   #sixsex, #cuin-index, #basics-index {
     width: 100%;
@@ -331,63 +274,67 @@ section h2 {
     max-width: 100%;
     max-height: 100%;
   }
+
   /*PRODUCTOS*/
   .productos {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-    -ms-grid-rows: auto auto auto auto auto auto auto auto;
-        grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
     margin: 30px 10px 50px 10px;
   }
+
   article p {
     line-height: 2;
   }
+
   /*MENU BURGER*/
   .navBurger {
     display: none;
   }
+
   .checkBurger:checked ~ ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
+
   .checkBurger {
     display: none;
   }
+
   .menuBurger {
     position: relative;
   }
+
   .navBurger {
     position: absolute;
     z-index: 2;
   }
+
   .burger_boton {
     text-decoration: none;
     color: white;
     font-size: 20px;
   }
+
   .listaBurger {
     background-color: black;
     text-align: center;
     padding: 10px 30px 10px 30px;
   }
   .listaBurger:hover {
-    background-color: #141414;
+    background-color: rgb(20, 20, 20);
   }
+
   a:hover {
     color: white;
   }
+
   /*MAPAS*/
   iframe {
     width: 200px;
     height: 200px;
   }
+
   /*INPUTS*/
   textarea, input {
     width: calc(100vw - 80px);
@@ -396,43 +343,42 @@ section h2 {
     margin-top: 5px;
     margin-bottom: 5px;
   }
+
   /*INFO Y CONTACTO*/
-  .info, .contacto, .info {
+  .info, .contacto {
     margin: 40px;
     line-height: 2;
   }
+
   .formulario-mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
+
   .salto-mobile {
     display: none;
   }
 }
-
 /*VISTA DESKTOP*/
 @media screen and (min-width: 950px) {
   .iconoBusqueda {
     display: none;
   }
+
   .horizontal {
     display: none;
   }
+
   .menuBurger {
     display: none;
   }
+
   .formulario-desktop {
     border: 1px solid black;
     padding: 30px;
     border-radius: 2rem;
   }
 }
-
 /*RESETS*/
 * {
   margin: 0px;
@@ -443,5 +389,4 @@ body, ul, li, nav, header, body, footer, h1, h2, h3, h4, h5, h6, p, section, div
   margin: 0px;
   padding: 0px;
   line-height: normal;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
