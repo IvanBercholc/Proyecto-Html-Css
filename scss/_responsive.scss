@@ -1,5 +1,7 @@
 /*RESPONSIVE*/
 
+@import "colores";
+
 /*VISTA MOBILE*/
 @media screen and (max-width: 950px) {
     * {
@@ -129,7 +131,7 @@
         display: none;
     }
     .formulario-desktop {
-        border: 1px solid black;
+        border: 1px solid map-get($map: $mapa-colores, $key: gris-clarito);
         padding: 30px;
         border-radius: 2rem;
     }
