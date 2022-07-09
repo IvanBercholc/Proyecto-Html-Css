@@ -111,9 +111,24 @@ footer {
     input {
         line-height: 2;
     }
+    display: flex;
+    flex-direction: column;
+    form label {
+        font-weight: bold;
+    }
+}
+
+.main-contacto {
+    display:flex;
+    justify-content:center;
+    flex-direction: row;
 }
 .info {
-    @extend .contacto;
+    margin: 50px;
+    line-height: 2.5;
+    input {
+        line-height: 2;
+    }
     ul li {
         line-height: 2.5;
     }
@@ -122,10 +137,10 @@ footer {
     list-style-type: square;
 }
 textarea {
-    height: 200px
+    height: 100px;
+    width: 505px;
 }
-
 /*ENCABEZADOS*/
-section h2 {
-    margin: 30px 0px 0px 20px
+.main-productos h2 {
+    margin: 30px 0px 0px 20px;
 }

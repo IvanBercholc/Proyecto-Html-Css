@@ -46,20 +46,32 @@
         </a>
     </header>
         <section>
-            <h2><i>Contacto</i></h2>
+            <div class="main-contacto">
             <div class="contacto">
-            <form class="formulario-mobile formulario-desktop" action="#" method="get" enctype="multipart/form-data">
-                <label for="nombre">Nombre completo</label><br class="salto-mobile">
-                <input type="text" id="nombre" name="nombre" required><br class="salto-mobile">
-                <label for="mail">Mail</label><br class="salto-mobile">
-                <input type="email" id="mail" name="mail" required><br class="salto-mobile">
-                <label for="telefono">Teléfono</label><br class="salto-mobile">
-                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="01144443333"><br class="salto-mobile">
-                <label for="mensaje">Mensaje</label><br class="salto-mobile">
-                <textarea id="mensaje" name="mensaje" placeholder="Escribe aquí..." rows="10" cols="30"></textarea><br class="salto-mobile">
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Restablecer">
+                <h2 class="form-titulo"><i>Contacto</i></h2>
+                <form class="formulario-mobile formulario-desktop" action="#" method="get" enctype="multipart/form-data">
+                <div class="form-nombre">
+                    <label for="nombre">Nombre completo</label><br class="salto-mobile">
+                    <input type="text" id="nombre" name="nombre" required class="input-largo">
+                </div>
+                <div class="form-mail">
+                    <label for="mail">Mail</label><br class="salto-mobile">
+                    <input type="email" id="mail" name="mail" required class="input-corto">
+                </div>
+                <div class="form-telefono">
+                    <label for="telefono">Teléfono</label><br class="salto-mobile">
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="01144443333" class="input-corto">
+                </div>
+                <div class="form-mensaje">
+                    <label for="mensaje">Mensaje</label><br class="salto-mobile">
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe aquí..." rows="10" cols="30"></textarea>
+                </div>
+                <div class="form-botones">
+                    <input type="submit" value="Enviar" class="input-corto">
+                    <input type="reset" value="Restablecer" class="input-corto">
+                </div>
             </form>
+            </div>
             </div>
         </section>
         <footer class="footer">

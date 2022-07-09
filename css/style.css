@@ -185,14 +185,32 @@ footer h5 {
 }
 
 /*CUERPO INFO Y CONTACTO*/
-.contacto, .info {
+.contacto {
+  margin: 50px;
+  line-height: 2.5;
+  display: flex;
+  flex-direction: column;
+}
+.contacto input {
+  line-height: 2;
+}
+.contacto form label {
+  font-weight: bold;
+}
+
+.main-contacto {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.info {
   margin: 50px;
   line-height: 2.5;
 }
-.contacto input, .info input {
+.info input {
   line-height: 2;
 }
-
 .info ul li {
   line-height: 2.5;
 }
@@ -202,11 +220,12 @@ footer h5 {
 }
 
 textarea {
-  height: 200px;
+  height: 100px;
+  width: 505px;
 }
 
 /*ENCABEZADOS*/
-section h2 {
+.main-productos h2 {
   margin: 30px 0px 0px 20px;
 }
 
@@ -350,6 +369,10 @@ section h2 {
     margin: 40px;
     line-height: 2;
   }
+  .info .form-titulo, .contacto .form-titulo {
+    padding-bottom: 30px;
+    text-align: center;
+  }
 
   .formulario-mobile {
     display: flex;
@@ -375,9 +398,58 @@ section h2 {
   }
 
   .formulario-desktop {
-    border: 1px solid rgb(150, 150, 150);
-    padding: 30px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 4;
+    grid-template-areas: "nombre nombre" "mail telefono" "mensaje mensaje" "botones botones";
+    row-gap: 10px;
+    column-gap: 5px;
+  }
+
+  .form-nombre {
+    grid-area: nombre;
+  }
+
+  .form-mail {
+    grid-area: mail;
+  }
+
+  .form-telefono {
+    grid-area: telefono;
+  }
+
+  .form-botones {
+    grid-area: botones;
+  }
+
+  .form-mensaje {
+    grid-area: mensaje;
+  }
+
+  .input-largo {
+    width: 505px;
+  }
+
+  .input-corto {
+    width: 250px;
+  }
+
+  .contacto {
+    border: 1px solid black;
     border-radius: 2rem;
+    background-image: linear-gradient(to bottom, black 0 15%, white 15% 100%);
+    opacity: 0.87;
+  }
+
+  .form-titulo {
+    color: white;
+    padding: 15px;
+  }
+
+  .main-contacto {
+    background-image: url(/assets/wave-fondo.jpg);
+    background-size: cover;
   }
 }
 /*RESETS*/
