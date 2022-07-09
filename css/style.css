@@ -436,6 +436,8 @@ textarea {
   }
 
   .contacto {
+    margin-top: 70px;
+    margin-bottom: 100px;
     border: 1px solid black;
     border-radius: 2rem;
     background-image: linear-gradient(to bottom, black 0 15%, white 15% 100%);
