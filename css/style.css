@@ -1,6 +1,5 @@
 @charset "UTF-8";
-/*COLORES*/
-/*BOTONES*/
+/*COLORES*/ /*BOTONES*/
 /*BOTÓNES MENU*/
 .nav__boton:link, .nav__boton:visited {
   color: white;
@@ -238,25 +237,21 @@ textarea {
   font-family: "Croissant One", cursive;
 }
 
-/*RESPONSIVE*/
-/*COLORES*/
+/*RESPONSIVE*/ /*COLORES*/
 /*VISTA MOBILE*/
 @media screen and (max-width: 950px) {
   * {
     margin: 0px;
     padding: 0px;
   }
-
   .navDesktop, #busqueda, #carrito, #botonwave {
     display: none;
   }
-
   header {
     display: flex;
     position: relative;
     width: 100%;
   }
-
   footer {
     display: flex;
     flex-direction: column;
@@ -266,27 +261,22 @@ textarea {
     justify-content: space-evenly;
     padding: 20px 0px 20px 0px;
   }
-
   .logo {
     position: absolute;
     left: 38%;
     top: 25%;
   }
-
   .grid {
     grid-template-rows: 100px auto 400px;
   }
-
   .horizontal {
     width: 100%;
     border-top: 3px solid black;
     margin-bottom: -6px;
   }
-
   .iconoBusqueda {
     width: 30px;
   }
-
   /*FOTO SIX SEX INICIO*/
   #sixsex, #cuin-index, #basics-index {
     width: 100%;
@@ -294,7 +284,6 @@ textarea {
     max-width: 100%;
     max-height: 100%;
   }
-
   /*PRODUCTOS*/
   .productos {
     display: grid;
@@ -302,40 +291,32 @@ textarea {
     grid-template-rows: auto auto auto auto auto auto auto auto;
     margin: 30px 10px 50px 10px;
   }
-
   article p {
     line-height: 2;
   }
-
   /*MENU BURGER*/
   .navBurger {
     display: none;
   }
-
   .checkBurger:checked ~ ul {
     display: flex;
     flex-direction: column;
   }
-
   .checkBurger {
     display: none;
   }
-
   .menuBurger {
     position: relative;
   }
-
   .navBurger {
     position: absolute;
     z-index: 2;
   }
-
   .burger_boton {
     text-decoration: none;
     color: white;
     font-size: 20px;
   }
-
   .listaBurger {
     background-color: black;
     text-align: center;
@@ -344,26 +325,22 @@ textarea {
   .listaBurger:hover {
     background-color: rgb(20, 20, 20);
   }
-
   a:hover {
     color: white;
   }
-
   /*MAPAS*/
   iframe {
     width: 200px;
     height: 200px;
   }
-
   /*INPUTS*/
   textarea, input {
-    width: calc(100vw - 80px);
+    width: calc(100vw - 120px);
     line-height: 2rem;
     padding-left: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
   }
-
   /*INFO Y CONTACTO*/
   .info, .contacto {
     margin: 40px;
@@ -373,14 +350,31 @@ textarea {
     padding-bottom: 30px;
     text-align: center;
   }
-
   .formulario-mobile {
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
-
   .salto-mobile {
     display: none;
+  }
+  .contacto {
+    margin-top: 70px;
+    margin-bottom: 100px;
+    border: 1px solid black;
+    border-radius: 2rem;
+    background-image: linear-gradient(to bottom, black 0 15%, white 13% 100%);
+    opacity: 0.85;
+    padding: 10px;
+    text-align: center;
+  }
+  .form-titulo {
+    color: white;
+    padding: 15px;
+  }
+  .main-contacto {
+    background-image: url(/assets/wave-fondo.jpg);
+    background-size: cover;
   }
 }
 /*VISTA DESKTOP*/
@@ -388,15 +382,12 @@ textarea {
   .iconoBusqueda {
     display: none;
   }
-
   .horizontal {
     display: none;
   }
-
   .menuBurger {
     display: none;
   }
-
   .formulario-desktop {
     padding: 20px;
     display: grid;
@@ -406,35 +397,27 @@ textarea {
     row-gap: 10px;
     column-gap: 5px;
   }
-
   .form-nombre {
     grid-area: nombre;
   }
-
   .form-mail {
     grid-area: mail;
   }
-
   .form-telefono {
     grid-area: telefono;
   }
-
   .form-botones {
     grid-area: botones;
   }
-
   .form-mensaje {
     grid-area: mensaje;
   }
-
   .input-largo {
     width: 505px;
   }
-
   .input-corto {
     width: 250px;
   }
-
   .contacto {
     margin-top: 70px;
     margin-bottom: 100px;
@@ -443,12 +426,10 @@ textarea {
     background-image: linear-gradient(to bottom, black 0 15%, white 15% 100%);
     opacity: 0.87;
   }
-
   .form-titulo {
     color: white;
     padding: 15px;
   }
-
   .main-contacto {
     background-image: url(/assets/wave-fondo.jpg);
     background-size: cover;

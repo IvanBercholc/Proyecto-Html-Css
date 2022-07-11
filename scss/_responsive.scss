@@ -99,7 +99,7 @@
     }
     /*INPUTS*/
     textarea, input {
-        width: calc(100vw - 80px);
+        width: calc(100vw - 120px);
         line-height: 2rem;
         padding-left: 5px;
         margin-top: 5px;
@@ -117,9 +117,28 @@
     .formulario-mobile {
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
     .salto-mobile {
         display: none;
+    }
+    .contacto {
+        margin-top: 70px;
+        margin-bottom: 100px;
+        border: 1px solid black;
+        border-radius: 2rem;
+        background-image: linear-gradient(to bottom, black 0 15%, white 13% 100%);
+        opacity: 0.85;
+        padding: 10px;
+        text-align: center;
+    }
+    .form-titulo {
+        color: white;
+        padding: 15px;
+    }
+    .main-contacto {
+        background-image: url(/assets/wave-fondo.jpg);
+        background-size: cover;
     }
 }
 
