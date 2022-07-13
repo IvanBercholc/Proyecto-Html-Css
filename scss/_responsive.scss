@@ -36,8 +36,8 @@
     }
     .horizontal {
         width: 100%;
-        border-bottom: 9px solid black;
-        margin-bottom: -6px
+        border-bottom: 5px solid black;
+        /*margin-bottom: -6px*/
     }
     .iconoBusqueda {
         width: 30px
@@ -59,8 +59,8 @@
     .boton-index-mobile {
         @include boton (2px solid black, map-get($mapa-colores, gris-clarito), black);
         position: absolute;
-        bottom: 7%;
-        right: 10%;
+        top: 5%;
+        left: 5%;
         font-size: 30px;
         padding: 10px 20px 10px 20px;
         border-radius: 2rem;
