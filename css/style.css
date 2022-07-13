@@ -343,7 +343,6 @@ h1 {
   .horizontal {
     width: 100%;
     border-bottom: 5px solid black;
-    /*margin-bottom: -6px*/
   }
   .iconoBusqueda {
     width: 30px;
@@ -360,22 +359,34 @@ h1 {
   }
   .contenedor-index-mobile {
     position: relative;
-    border-bottom: 10px solid black;
+    border-bottom: 5px solid black;
   }
   .boton-index-mobile {
-    border: 2px solid black;
+    border: 4px solid black;
     background-color: rgb(150, 150, 150);
     color: black;
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    font-size: 30px;
-    padding: 10px 20px 10px 20px;
+    font-size: 25px;
+    padding: 10px 40px 10px 40px;
     border-radius: 2rem;
     text-decoration: none;
   }
   .boton-index-mobile:hover {
     background-color: black;
+  }
+  .boton-wave-mobile {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+  }
+  .boton-cuin-mobile {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+  }
+  .boton-basics-mobile {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
   }
   /*PRODUCTOS*/
   .productos {

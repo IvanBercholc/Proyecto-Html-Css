@@ -37,7 +37,6 @@
     .horizontal {
         width: 100%;
         border-bottom: 5px solid black;
-        /*margin-bottom: -6px*/
     }
     .iconoBusqueda {
         width: 30px
@@ -54,21 +53,34 @@
     }
     .contenedor-index-mobile {
         position: relative;
-        border-bottom: 10px solid black;
+        border-bottom: 5px solid black;
     }
     .boton-index-mobile {
-        @include boton (2px solid black, map-get($mapa-colores, gris-clarito), black);
-        position: absolute;
-        top: 5%;
-        left: 5%;
-        font-size: 30px;
-        padding: 10px 20px 10px 20px;
+        @include boton (4px solid black, map-get($mapa-colores, gris-clarito), black);
+        font-size: 25px;
+        padding: 10px 40px 10px 40px;
         border-radius: 2rem;
         text-decoration: none;
         &:hover {
             background-color: black;
         }
     }
+    .boton-wave-mobile {
+        position: absolute;
+        top: 25%;
+        left: 5%;
+    }
+    .boton-cuin-mobile {
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+    }
+    .boton-basics-mobile {
+        position: absolute;
+        bottom: 10%;
+        right: 10%;
+    }
+
     /*PRODUCTOS*/
     .productos {
         display: grid;
