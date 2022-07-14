@@ -14,6 +14,7 @@
     }
     header {
         display: flex;
+        align-items: center;
         position: relative;
         width: 100%;
     }
@@ -29,14 +30,15 @@
     .logo {
         position: absolute;
         left: 38%;
-        top: 25%;
+        top: 17%;
     }
     .grid {
-        grid-template-rows: 100px auto 400px;
+        grid-template-rows: 70px auto 400px;
     }
     .horizontal {
         width: 100%;
         border-bottom: 5px solid black;
+        border-top: 5px solid black;
     }
     .iconoBusqueda {
         width: 30px
@@ -53,8 +55,7 @@
     }
     .contenedor-index-mobile {
         position: relative;
-        border-bottom: 5px solid black;
-        padding: -3px;
+        /*border-bottom: 5px solid black;*/
     }
     .boton-index-mobile {
         @include boton (4px solid black, map-get($mapa-colores, gris-clarito), black);

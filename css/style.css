@@ -320,6 +320,7 @@ h1 {
   }
   header {
     display: flex;
+    align-items: center;
     position: relative;
     width: 100%;
   }
@@ -335,14 +336,15 @@ h1 {
   .logo {
     position: absolute;
     left: 38%;
-    top: 25%;
+    top: 17%;
   }
   .grid {
-    grid-template-rows: 100px auto 400px;
+    grid-template-rows: 70px auto 400px;
   }
   .horizontal {
     width: 100%;
     border-bottom: 5px solid black;
+    border-top: 5px solid black;
   }
   .iconoBusqueda {
     width: 30px;
@@ -359,8 +361,7 @@ h1 {
   }
   .contenedor-index-mobile {
     position: relative;
-    border-bottom: 5px solid black;
-    padding: -3px;
+    /*border-bottom: 5px solid black;*/
   }
   .boton-index-mobile {
     border: 4px solid black;
