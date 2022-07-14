@@ -60,3 +60,30 @@ h1 {
         @include boton (solid 1px map-get($mapa-colores, gris-clarito), white, black);
     }
 }
+
+/*BOTONES INDEX MOBILE*/
+.boton-index-mobile {
+    @include boton (4px solid black, map-get($mapa-colores, gris-clarito), black);
+    font-size: 25px;
+    padding: 10px 40px 10px 40px;
+    border-radius: 2rem;
+    text-decoration: none;
+    &:hover {
+        background-color: black;
+    }
+}
+.boton-wave-mobile {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+.boton-cuin-mobile {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+}
+.boton-basics-mobile {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
