@@ -121,10 +121,10 @@ nav li {
 footer {
   color: rgb(255, 255, 255);
   background-color: black;
-  max-width: 100%;
-  line-height: 2.5;
   display: flex;
   justify-content: space-evenly;
+  max-width: 100%;
+  line-height: 2.5;
   padding-top: 10px;
 }
 footer p, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
@@ -141,7 +141,7 @@ footer h5 {
   margin: 3px;
 }
 
-#puntosventa:link, #puntosventa:visited {
+.enlaces-footer:link, .enlaces-footer:visited {
   color: white;
 }
 
@@ -153,6 +153,11 @@ footer h5 {
 }
 .redes a {
   margin: 3px;
+}
+
+#copyright {
+  display: inline;
+  text-align: center;
 }
 
 /*SECCIÓN PRINCIPAL INDEX*/
