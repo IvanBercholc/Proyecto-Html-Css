@@ -343,8 +343,6 @@ h1 {
   }
   .horizontal {
     width: 100%;
-    border-bottom: 5px solid black;
-    border-top: 5px solid black;
   }
   .iconoBusqueda {
     width: 30px;
@@ -361,7 +359,6 @@ h1 {
   }
   .contenedor-index-mobile {
     position: relative;
-    /*border-bottom: 5px solid black;*/
   }
   .boton-index-mobile {
     border: 4px solid black;
@@ -377,8 +374,8 @@ h1 {
   }
   .boton-wave-mobile {
     position: absolute;
-    top: 25%;
-    left: 5%;
+    bottom: 10%;
+    right: 10%;
   }
   .boton-cuin-mobile {
     position: absolute;
