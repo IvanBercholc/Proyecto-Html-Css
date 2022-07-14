@@ -54,6 +54,7 @@
     .contenedor-index-mobile {
         position: relative;
         border-bottom: 5px solid black;
+        padding: -3px;
     }
     .boton-index-mobile {
         @include boton (4px solid black, map-get($mapa-colores, gris-clarito), black);
