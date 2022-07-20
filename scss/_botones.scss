@@ -63,7 +63,7 @@ h1 {
 
 /*BOTONES INDEX MOBILE*/
 .boton-index-mobile {
-    @include boton (4px solid black, map-get($mapa-colores, gris-clarito), black);
+    @include boton (2px solid black, map-get($mapa-colores, gris-clarito), black);
     font-size: 25px;
     padding: 10px 40px 10px 40px;
     border-radius: 2rem;
